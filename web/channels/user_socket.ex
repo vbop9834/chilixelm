@@ -2,6 +2,7 @@ defmodule Chilixelm.UserSocket do
   use Phoenix.Socket
 
   ## Channels
+  channel "room:lobby", Chilixelm.RoomChannel
   # channel "room:*", Chilixelm.RoomChannel
 
   ## Transports
